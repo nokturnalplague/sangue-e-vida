@@ -60,7 +60,7 @@ expandButtons.forEach((expandButton, index) => {
 function headerSize() {
     const headerContainerSize = headerContainer.offsetHeight
 
-    if (currentPage === 'index.html') {
+    if (currentPage === 'index.html' || currentPage === '') {
         header.style.height = '100vh'
     } else {
         header.style.height = `${headerContainerSize}px`
