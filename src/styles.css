@@ -273,7 +273,7 @@ main {
     justify-content: center;
     justify-self: center;
     width: 100%;
-    padding: 128px 16px;
+    padding: 128px 36px;
     gap: 48px;
     background-color: var(--light-gray);
     color: var(--white);
