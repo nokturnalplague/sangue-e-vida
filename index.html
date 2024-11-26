@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangue & Vida</title>
+    <link rel="shortcut icon" href="./src/pictures/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/styles.css">
+
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="./src/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <span class="header__logo">
+                <a href="../index.html">
+                    Sangue & Vida
+                </a>
+            </span>
+
+            <div class="header__navigation">
+                <a href="#beneficios">
+                    Por que doar?
+                </a>
+                <a href="#processo">
+                    Sobre a doação
+                </a>
+                <a href="#faq">
+                    Perguntas frequentes
+                </a>
+            </div>
+
+            <button class="header__button">
+                <a href="./src/form.html">
+                    Posso ser um doador?
+                </a>
+            </button>
+
+            <div class="header__menu-icon" id="menuButton">
+                <img src="./src/pictures/menu.svg" alt="Menu">
+            </div>
+        </div>
+
+        <nav class="navigation__mobile">
+            <span id="closeButton" class="navigation__close">
+                <img src="./src/pictures/close.svg" alt="Fechar">
+            </span>
+
+            <div class="navigation__links">
+                <a href="#beneficios">
+                    Por que doar?
+                </a>
+                <a href="#processo">
+                    Sobre a doação
+                </a>
+                <a href="#faq">
+                    Perguntas frequentes
+                </a>
+            </div>
+            <button>
+                <a href="./src/form.html">
+                    Posso ser um doador?
+                </a>
+            </button>
+        </nav>
+
+        <div class="header__content">
+            <div class="header__text">
+                <h1>Você é a gota que faltava!</h1>
+                <p>Doe sangue e faça a diferença.</p>
+                <button>
+                    <a href="#estoque">Saiba mais</a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- <div id="estoque" class="white__bg">
+            <h2>Estoque de sangue do HEMOSC</h2>
+
+            <p class="fonte">Fonte: <a href="https://www.hemosc.org.br">https://www.hemosc.org.br</a></span>
+        </div> -->
+
+        <div id="card" class="white__bg">
+            <div class="card__container">
+                <div class="card__img">
+                    <img src="./src/pictures/card-img.jpg" alt="Bolsa de sangue">
+                </div>
+                <div class="card__text">
+                    <p>A doação de sangue é um ato de solidariedade que salva vidas. A cada doação, você ajuda pacientes em tratamentos médicos, vítimas de acidentes e até mesmo pessoas em situações emergenciais. No Brasil, milhares de pessoas precisam de sangue todos os dias, e você pode fazer a diferença.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="beneficios" class="red__bg">
+            <h2>Benefícios da doação de sangue</h2>
+            <p>Além de ajudar quem precisa, a doação de sangue também traz benefícios para o próprio doador! A doação pode:</p>
+
+            <div class="beneficios__itens">
+                <span>Estimular a produção de novas células sanguíneas</span>
+                <br>
+                <span>Reduzir o risco de doenças cardíacas, já que a doação regular pode ajudar a manter níveis saudáveis de ferro no sangue</span>
+                <br>
+                <span>Proporcionar uma sensação de bem-estar ao saber que você ajudou a salvar vidas</span>
+            </div>
+        </div>
+
+        <div id="processo" class="white__bg">
+            <h2>O processo de doação de sangue</h2>
+            <p>O processo de doação de sangue é simples e seguro</p>
+
+            <div class="processo__itens">
+                <div class="processo__item">
+                    <span>1</span>
+                    <h3>Cadastro e triagem</h3>
+                    <p>Você preencherá um formulário e passará por uma triagem médica.</p>
+                </div>
+                <span class="processo__itens-arrow"></span>
+                <div class="processo__item">
+                    <span>2</span>
+                    <h3>Doação</h3>
+                    <p>A coleta do sangue leva, em média, 10 a 15 minutos.</p>
+                </div>
+                <span class="processo__itens-arrow"></span>
+                <div class="processo__item">
+                    <span>3</span>
+                    <h3>Recuperação</h3>
+                    <p>Após a doação, você será orientado a descansar por alguns minutos e receberá um lanche para repor a energia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="preparo" class="red__bg">
+            <h2>Como se preparar para a doação?</h2>
+            <p>Para que a doação seja bem-sucedida, é importante se preparar corretamente!</p>
+
+            <div class="preparo__itens">
+                <span>Durma bem na noite anterior<br>(pelo menos 6 horas)</span>
+                <br>
+                <span>Alimente-se bem, evite alimentos gordurosos antes da doação</span>
+                <br>
+                <span>Beba bastante água no dia anterior e no dia da doação</span>
+                <br>
+                <span>Leve um documento de identificação com foto</span>
+            </div>
+        </div>
+
+        <div id="mitos" class="white__bg">
+            <h2>Mitos e verdades sobre a doação</h2>
+
+            <div class="mitos__itens">
+                <div class="mitos__item">
+                    <span class="mitos__item-mito">
+                        "Doar sangue engorda ou emagrece"
+                    </span>
+                    <br>
+                    <span class="mitos__item-verdade">
+                        A doação de sangue não tem impacto significativo no peso do doador. O corpo repõe o volume doado rapidamente, e a doação não afeta o metabolismo de forma a causar ganho ou perda de peso.
+                    </span>
+                </div>
+
+                <div class="mitos__item">
+                    <span class="mitos__item-mito">
+                        "A doação de sangue pode me deixar com anemia"
+                    </span>
+                    <br>
+                    <span class="mitos__item-verdade">
+                        A doação de sangue não causa anemia. O organismo começa a repor rapidamente os componentes do sangue após a doação. No entanto, se o doador não seguir as orientações de cuidados pós-doação (alimentação adequada, hidratação, descanso), isso pode prejudicar a reposição normal dos níveis de hemoglobina.
+                    </span>
+                </div>
+
+                <div class="mitos__item">
+                    <span class="mitos__item-mito">
+                        "Quem tem tatuagem ou piercing não pode doar sangue"
+                    </span>
+                    <br>
+                    <span class="mitos__item-verdade">
+                        Pessoas com tatuagens ou piercings podem doar sangue, desde que o procedimento tenha sido realizado há pelo menos 12 meses e em local regulamentado. O risco de infecção após esse período já diminui significativamente, tornando a doação segura.
+
+                    </span>
+                </div>
+
+                <div class="mitos__item">
+                    <span class="mitos__item-mito">
+                        "Quem tem pressão alta ou diabetes não pode doar sangue"
+                    </span>
+                    <br>
+                    <span class="mitos__item-verdade">
+                        Pessoas com pressão alta controlada ou diabetes controlada podem, sim, doar sangue. O importante é que as condições estejam bem controladas e que o doador esteja saudável no momento da doação. No caso da hipertensão, o ideal é que a pressão arterial esteja dentro dos limites normais. Para diabetes, o controle glicêmico é essencial.
+                    </span>
+                </div>
+
+                <div class="mitos__item">
+                    <span class="mitos__item-mito">
+                        "Só pessoas com tipos sanguíneos raros ou muito específicos podem doar sangue"
+                    </span>
+                    <br>
+                    <span class="mitos__item-verdade">
+                        Todos os tipos sanguíneos são importantes. O que varia é a demanda para tipos de sangue mais raros ou mais comuns, mas todas as doações são valiosas. Além disso, os bancos de sangue têm sistemas eficientes de distribuição para garantir que os estoques sejam mantidos equilibrados para todos os tipos sanguíneos.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="red__bg">
+            <h2>Perguntas frequentes</h2>
+
+            <div class="faq__itens">
+                <span class="faq__item">
+                    <div class="faq__item-expand">
+                        <h3>Por que doar?</h3>
+                        <div class="open-arrow">
+                            <img src="./src/pictures/arrow-down.svg" alt="Expandir">
+                        </div>
+                    </div>
+                    <div class="faq__item-expanded">
+                        <p>
+                            O sangue é um tecido vivo que circula pelo corpo, essencial à vida.
+                            <br>
+                            Todos os dias acontecem centenas de acidentes, cirurgias e queimaduras violentas que exigem transfusão, assim como os portadores de hemofilia, leucemia e anemias.
+                            <br>
+                            Além disso, doar sangue é um ato simples, tranquilo e seguro que não provoca risco ou prejuízo à saúde. Se cada pessoa saudável doasse sangue espontaneamente pelo menos duas vezes ao ano, os Hemocentros teriam Hemocomponentes suficiente para atender toda população. O sangue não tem substituto. Por isso a doação espontânea e periódica é fundamental. Uma única doação de sangue pode salvar várias vidas.
+                            <br>
+                            Doar sangue é uma atitude necessária, de solidariedade, cidadania e amor.
+                            <br>
+                            Lembre-se:
+                        </p>
+                        <ul>
+                            <li>Sangue não se fabrica artificialmente;</li>
+                            <li>O sangue doado não ultrapassa 10% do volume em circulação no corpo;</li>
+                            <li>A quantidade doada é reposta rapidamente;</li>
+                            <li>Você só doa novamente se quiser. A doação de sangue não vicia;</li>
+                            <li>A doação acontece em ambiente confortável e limpo;</li>
+                            <li>O doador é atendido por pessoal capacitado e qualificado para esta função.</li>
+                        </ul>
+                    </div>
+                </span>
+                <br>
+                <span class="faq__item">
+                    <div class="faq__item-expand">
+                        <h3>Tipos de doação</h3>
+                        <div class="open-arrow">
+                            <img src="./src/pictures/arrow-down.svg" alt="Expandir">
+                        </div>
+                    </div>
+                    <div class="faq__item-expanded">
+                        <p>
+                            O doador pode candidatar-se a doação de três formas:
+                        </p>
+                        <ul>
+                            <li><strong>Doação Espontânea:</strong> feita de modo altruísta, como uma atitude solidária com um único interesse: ajudar o próximo.</li>
+                            <li><strong>Doação vinculada:</strong> feita vinculada a algum paciente.</li>
+                            <li><strong>Doação autóloga:</strong> doar para si mesmo.</li>
+                        </ul>
+                    </div>
+                </span>
+                <br>
+                <span class="faq__item">
+                    <div class="faq__item-expand">
+                        <h3>O que acontece com o sangue doado?</h3>
+                        <div class="open-arrow">
+                            <img src="./src/pictures/arrow-down.svg" alt="Expandir">
+                        </div>
+                    </div>
+                    <div class="faq__item-expanded">
+                        <p>
+                            Após a coleta, o sangue é separado em seus componentes dentro de 6 a 8 horas, no setor de processamento;
+                            <br>
+                            Cada componentes do sangue tem uma finalidade:
+                        </p>
+                        <ol>
+                            <li><strong>Glóbulos vermelhos</strong> - servem para tratar anemias;</li>
+                            <li><strong>Plasma (parte líquida do sangue)</strong> - serve para tratar hemorragias. Parte do plasma é encaminhado para indústrias que produzem fatores de coagulação, utilizados para tratar hemofílicos;</li>
+                            <li><strong>Plaquetas</strong> - servem para tratar ou evitar sangramentos, e em pessoas que fazem quimioterapia.</li>
+                        </ol>
+                    </div>
+                </span>
+            </div>
+
+            <p class="fonte">Fonte: <a href="https://www.hemosc.org.br">https://www.hemosc.org.br</a></span>
+        </div>
+
+        <div id="cta" class="white__bg">
+            <div class="cta__container">
+                <div class="cta__text">
+                    <h2>Junte-se à nós!</h2>
+                    <p>Seja um herói no cotidiano de muitas pessoas! A cada doação, você contribui para um futuro mais saudável e salva vidas. Responda o questionário para saber se pode ser um doador e agende sua doação hoje mesmo!</p>
+                    <button>
+                        <a href="./src/form.html">Posso ser um doador?</a>
+                    </button>
+                </div>
+                <div class="cta__img">
+                    <img src="./src/pictures/cta-img.jpg" alt="Bolsa de sangue">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Nathália Dagort Ferlin</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangue & Vida</title>
+    <link rel="shortcut icon" href="./pictures/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="./scripts.js" defer></script>
+    <script src="./form.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <span class="header__logo">
+                <a href="../index.html">
+                    Sangue & Vida
+                </a>
+            </span>
+
+            <div class="header__navigation">
+                <a href="../index.html#beneficios">
+                    Por que doar?
+                </a>
+                <a href="../index.html#processo">
+                    Sobre a doação
+                </a>
+                <a href="../index.html#faq">
+                    Perguntas frequentes
+                </a>
+            </div>
+
+            <button class="header__button">
+                <a href="./form.html">
+                    Posso ser um doador?
+                </a>
+            </button>
+
+            <div class="header__menu-icon" id="menuButton">
+                <img src="./pictures/menu.svg" alt="Menu">
+            </div>
+        </div>
+
+        <nav class="navigation__mobile">
+            <span id="closeButton" class="navigation__close">
+                <img src="./pictures/close.svg" alt="Fechar">
+            </span>
+
+            <div class="navigation__links">
+                <a href="../index.html#beneficios">
+                    Por que doar?
+                </a>
+                <a href="../index.html#processo">
+                    Sobre a doação
+                </a>
+                <a href="../index.html#faq">
+                    Perguntas frequentes
+                </a>
+            </div>
+            <button>
+                <a href="">
+                    Posso ser um doador?
+                </a>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="white__bg">
+            <form id="form">
+                <h2>Posso ser um doador?</h2>
+
+                <div id="gerais" class="container">
+                    <h3>Critérios gerais</h3>
+
+                    <div class="idade">
+                        <label for="idade" class="label-title">Qual a sua idade?</label>
+                        <div class="input">
+                            <input type="number" id="idade" name="idade" required>
+                        </div>
+                    </div>
+
+                    <div class="genero">
+                        <label for="genero" class="label-title">Qual seu gênero biológico?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="genero" value="sim" required>
+                            <label for="feminino">Feminino</label>
+                            <br>
+                            <input type="radio" name="genero" value="nao">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                    </div>
+
+                    <div class="peso">
+                        <label for="peso" class="label-title">Qual seu peso, em kg?</label>
+                        <div class="input">
+                            <input type="number" id="peso" name="peso" required>
+                        </div>
+                    </div>
+
+                    <div class="saude">
+                        <label for="saude" class="label-title">Você está em boas condições de saúde atualmente?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="saude" value="sim" required>
+                            <label for="saude-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="saude" value="nao">
+                            <label for="saude-nao">Não</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="temporarios" class="container">
+                    <h3>Impedimentos temporários</h3>
+
+                    <div class="resfriado">
+                        <label for="resfriado" class="label-title">Você teve resfriado nos últimos 7 dias?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="resfriado" value="sim" required>
+                            <label for="resfriado-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="resfriado" value="nao">
+                            <label for="resfriado-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="gestante">
+                        <label for="gestante" class="label-title">Você está grávida, amamentando (menos de 12 meses após o parto), ou teve parto recentemente?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="gestante" value="sim" required>
+                            <label for="gestante-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="gestante" value="nao">
+                            <label for="gestante-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="procedimentos-esteticos">
+                        <label for="procedimentos-esteticos" class="label-title">Você fez tatuagem, maquiagem definitiva, micropigmentação, piercing ou colocou brinco nos últimos 12 meses?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="procedimentos-esteticos" value="sim" required>
+                            <label for="procedimentos-esteticos-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="procedimentos-esteticos" value="nao">
+                            <label for="procedimentos-esteticos-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="procedimentos-medicos">
+                        <label for="procedimentos-medicos" class="label-title">Você passou por procedimentos médicos recentes, como cirurgias, endoscopia, acupuntura ou extrações dentárias?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="procedimentos-medicos" value="sim" required>
+                            <label for="procedimentos-medicos-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="procedimentos-medicos" value="nao">
+                            <label for="procedimentos-medicos-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="vacinas">
+                        <label for="vacinas" class="label-title">Você tomou alguma vacina recentemente, como contra a gripe, Covid-19, dengue, entre outras?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="vacinas" value="sim" required>
+                            <label for="vacinas-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="vacinas" value="nao">
+                            <label for="vacinas-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="regioes-endemicas">
+                        <label for="regioes-endemicas" class="label-title">Você esteve em áreas com surtos de doenças como febre amarela, malária ou dengue nos últimos meses?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="regioes-endemicas" value="sim" required>
+                            <label for="regioes-endemicas-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="regioes-endemicas" value="nao">
+                            <label for="regioes-endemicas-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="herpes">
+                        <label for="herpes" class="label-title">Você teve diagnóstico ou suspeita de herpes recentemente?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="herpes" value="sim" required>
+                            <label for="herpes-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="herpes" value="nao">
+                            <label for="herpes-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="covid">
+                        <label for="covid" class="label-title">Você teve diagnóstico, suspeita ou contato com casos de Covid-19 ou dengue recentemente?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="covid" value="sim" required>
+                            <label for="covid-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="covid" value="nao">
+                            <label for="covid-nao">Não</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="definitivos" class="container">
+                    <h3>Critérios definitivos</h3>
+
+                    <div class="hepatite">
+                        <label for="hepatite" class="label-title">Você já foi diagnosticado com Hepatite após os 11 anos de idade?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="hepatite" value="sim" required>
+                            <label for="hepatite-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="hepatite" value="nao">
+                            <label for="hepatite-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="doencas-infecciosas">
+                        <label for="doencas-infecciosas" class="label-title">
+                            Você já foi diagnosticado com alguma das seguintes doenças infecciosas transmissíveis pelo sangue?
+                            <ul>
+                                <li>Hepatites B ou C</li>
+                                <li>HIV/AIDS</li>
+                                <li>HTLV I e II</li>
+                                <li>Doença de Chagas</li>
+                                <li>Malária</li>
+                            </ul>
+                        </label>
+                        <div class="opcoes">
+                            <input type="radio" name="doencas-infecciosas" value="sim" required>
+                            <label for="doencas-infecciosas-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="doencas-infecciosas" value="nao">
+                            <label for="doencas-infecciosas-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="drogas">
+                        <label for="drogas" class="label-title">Você já fez uso de drogas ilícitas injetáveis?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="drogas" value="sim" required>
+                            <label for="drogas-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="drogas" value="nao">
+                            <label for="drogas-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="neuro">
+                        <label for="neuro" class="label-title">Você tem alguma doença neurológica, como a Doença de Parkinson?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="neuro" value="sim" required>
+                            <label for="neuro-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="neuro" value="nao">
+                            <label for="neuro-nao">Não</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="intervalo" class="container">
+                    <h3>Intervalo entre doações</h3>
+
+                    <div class="doou">
+                        <label for="doou" class="label-title">Você já realizou doação de sangue antes?</label>
+                        <div class="opcoes">
+                            <input type="radio" name="doou" value="sim" required>
+                            <label for="doou-sim">Sim</label>
+                            <br>
+                            <input type="radio" name="doou" value="nao">
+                            <label for="doou-nao">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="tempo-doacao">
+                        <label for="tempo-doacao" class="label-title">Se você já doou sangue, quando foi a sua última doação?</label>
+                        <div class="input">
+                            <input type="date" id="tempo-doacao" name="tempo-doacao">
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-weight: 600;">A honestidade também pode salvar vidas. Ao doar sangue, seja sincero durante a entrevista.</p>
+                <button type="submit">Verificar aptidão</button>
+            </form>
+        </div>
+
+        
+        <div id="resultado" class="red__bg">
+            <h2 id="resultado__titulo"></h2>
+
+            <p style="text-align: center;">Embora o formulário indique se você está apto ou não a doar sangue, na triagem realizada no local de doação, a equipe avaliará outros fatores importantes, como o seu estado de saúde no momento, que podem impedir a doação. Esse procedimento garante a segurança tanto para você quanto para o receptor.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Nathália Dagort Ferlin</p>
+    </footer>
+</body>
+</html>

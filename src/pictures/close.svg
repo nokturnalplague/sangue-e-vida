@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="8" height="8">
+	<title>close-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0.65 0.65q0.07-0.07 0.16-0.11 0.09-0.04 0.19-0.04 0.1 0 0.19 0.04 0.09 0.04 0.16 0.11l2.65 2.64 2.65-2.64q0.14-0.15 0.35-0.15 0.21 0 0.35 0.15 0.15 0.14 0.15 0.35 0 0.21-0.15 0.35l-2.64 2.65 2.64 2.65q0.15 0.14 0.15 0.35 0 0.21-0.15 0.35-0.14 0.15-0.35 0.15-0.21 0-0.35-0.15l-2.65-2.64-2.65 2.64q-0.14 0.15-0.35 0.15-0.21 0-0.35-0.15-0.15-0.14-0.15-0.35 0-0.21 0.15-0.35l2.64-2.65-2.64-2.65q-0.07-0.07-0.11-0.16-0.04-0.09-0.04-0.19 0-0.1 0.04-0.19 0.04-0.09 0.11-0.16z"/>
+		</clipPath>
+		<image width="16" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAAXNSR0IB2cksfwAAAAZQTFRFvwYDvwYD0l8NMAAAAAJ0Uk5T/9kauFo6AAAAEElEQVR4nGNkYGRkYCAeAQAB9gASZBU5LQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g>
+			<path class="s0" d="m0.6 0.6q0.1 0 0.2-0.1 0.1 0 0.2 0 0.1 0 0.2 0 0.1 0.1 0.2 0.1l2.6 2.7 2.6-2.7q0.2-0.1 0.4-0.1 0.2 0 0.4 0.1 0.1 0.2 0.1 0.4 0 0.2-0.1 0.4l-2.7 2.6 2.7 2.6q0.1 0.2 0.1 0.4 0 0.2-0.1 0.4-0.2 0.1-0.4 0.1-0.2 0-0.4-0.1l-2.6-2.7-2.6 2.7q-0.2 0.1-0.4 0.1-0.2 0-0.4-0.1-0.1-0.2-0.1-0.4 0-0.2 0.1-0.4l2.7-2.6-2.7-2.6q0-0.1-0.1-0.2 0-0.1 0-0.2 0-0.1 0-0.2 0.1-0.1 0.1-0.2z"/>
+			<use id="img1" href="#img1" transform="matrix(1,0,0,1,-4,-4)"/>
+		</g>
+	</g>
+</svg>
