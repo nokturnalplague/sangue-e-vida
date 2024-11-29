@@ -131,4 +131,3 @@ window.addEventListener('resize', () => {
     redimensionarImagemHeader()
     redimensionarImagensBody()
 });
-

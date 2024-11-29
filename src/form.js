@@ -27,7 +27,7 @@ function validation() {
     const doou = document.querySelector('input[name="doou"]:checked').value
     const dataUltimaDoacao = new Date(document.getElementById('tempo-doacao').value)
     
-    if (idade >= 16 && idade < 18) {
+    if (idade > 0 && idade >= 16 && idade < 18) {
         mensagens.push('Se você tem entre 16 e 18 anos, é possível doar sangue com a autorização dos pais ou responsáveis.')
     } else if (idade >= 18 && idade < 60) {
     } else if (idade >= 60 && idade <= 69) {
