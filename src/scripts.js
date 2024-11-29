@@ -6,6 +6,7 @@ const navigation = document.querySelector('.navigation__mobile')
 
 const arrowContainer = document.querySelectorAll('.processo__itens-arrow')
 
+const faqItens = document.querySelectorAll('.faq__item')
 const expandButtons = document.querySelectorAll('.open-arrow')
 const expandFaqs = document.querySelectorAll('.faq__item-expand')
 const expandedFaqs = document.querySelectorAll('.faq__item-expanded')
@@ -24,11 +25,6 @@ closeMenu.addEventListener('click', () => {
     navigation.style.top = '-100vh';
 })
 
-//Executa novamente ao redimensionar a janela
-window.addEventListener('resize', () => {
-
-});
-
 function processo() {
     const arrowSrc = window.innerWidth >= 1439 ? './src/pictures/sequence-right.svg' : './src/pictures/sequence-down.svg'
 
@@ -41,11 +37,11 @@ function processo() {
 
 processo()
 
-expandButtons.forEach((expandButton, index) => {
-    expandButton.addEventListener('click', () => {
+faqItens.forEach((faqItem, index) => {
+    faqItem.addEventListener('click', () => {
         const expandFaq = expandFaqs[index];
         const expandedFaq = expandedFaqs[index];
-        const arrowImg = expandButton.querySelector('img');
+        const arrowImg = expandButtons[index].querySelector('img');
 
         if (arrowImg.src.includes('arrow-down.svg')) {
             expandFaq.style.borderRadius = '16px 0 0 0';
