@@ -103,18 +103,20 @@ function redimensionarImagensBody() {
     const imagemCard = document.getElementById('img-card')
     const imagemCta = document.getElementById('img-cta')
 
-    if (width < 600) {
-        imagemCard.src = './src/pictures/card-img-small.jpg'
-        imagemCta.src = './src/pictures/cta-img-small.jpg'
-    } else if (width >= 600 && width <1440 ) {
-        imagemCard.src = './src/pictures/card-img-medium.jpg'
-        imagemCta.src = './src/pictures/cta-img-medium.jpg'
-    } else if (width >= 1440 && width < 2880) {
-        imagemCard.src = './src/pictures/card-img-large.jpg'
-        imagemCta.src = './src/pictures/cta-img-large.jpg'
-    } else {
-        imagemCard.src = './src/pictures/card-img-original.jpg'
-        imagemCta.src = './src/pictures/cta-img-original.jpg'
+    if (currentPage === 'index.html' || currentPage === '') {
+        if (width < 600) {
+            imagemCard.src = './src/pictures/card-img-small.jpg'
+            imagemCta.src = './src/pictures/cta-img-small.jpg'
+        } else if (width >= 600 && width <1440 ) {
+            imagemCard.src = './src/pictures/card-img-medium.jpg'
+            imagemCta.src = './src/pictures/cta-img-medium.jpg'
+        } else if (width >= 1440 && width < 2880) {
+            imagemCard.src = './src/pictures/card-img-large.jpg'
+            imagemCta.src = './src/pictures/cta-img-large.jpg'
+        } else {
+            imagemCard.src = './src/pictures/card-img-original.jpg'
+            imagemCta.src = './src/pictures/cta-img-original.jpg'
+        }
     }
 }
 
