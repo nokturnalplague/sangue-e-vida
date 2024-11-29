@@ -591,7 +591,7 @@ form .opcoes {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 2px;
 }
 
 form label {
@@ -610,9 +610,17 @@ form input {
     border-radius: 8px 0 8px 8px;
 }
 
+form .radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+
 form input[type="radio"] {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
 }
 
 form input[type="text"], form input[type="date"] {
