@@ -289,6 +289,10 @@ main {
     color: var(--dark-gray);
 }
 
+.red__bg ul li {
+    color: var(--dark-gray);
+}
+
 .card__container {
     display: flex;
     flex-direction: column;

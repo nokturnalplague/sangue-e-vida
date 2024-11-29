@@ -182,4 +182,9 @@ form.addEventListener('submit', function(evento) {
             ul.appendChild(li)
         })
     }
-})
+
+    const resultadoAviso = document.createElement('p')
+    resultadoAviso.style.textAlign = 'center'
+    resultadoAviso.innerText = 'Embora o formulário indique se você está apto ou não a doar sangue, na triagem realizada no local de doação, a equipe avaliará outros fatores importantes, como o seu estado de saúde no momento, que podem impedir a doação. Esse procedimento garante a segurança tanto para você quanto para o receptor.'
+    resultado.appendChild(resultadoAviso)
+})  
