@@ -601,7 +601,7 @@ form label {
 form input {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border: 1px var(--red) solid;
     height: 48px;
     width: 48px;
@@ -610,7 +610,12 @@ form input {
     border-radius: 8px 0 8px 8px;
 }
 
-form .input {
+form input[type="radio"] {
+    width: 24px;
+    height: 24px;
+}
+
+form input[type="text"], form input[type="date"] {
     width: 256px;
 }
 
