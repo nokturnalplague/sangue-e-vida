@@ -14,6 +14,8 @@ const header = document.querySelector('header')
 const headerContainer = document.querySelector('.header__container')
 const currentPage = window.location.pathname.split('/').pop();
 
+const width = window.innerWidth
+
 openMenu.addEventListener('click', () => {
     navigation.style.top = '0';
 })
@@ -71,9 +73,62 @@ function headerSize() {
 
 headerSize()
 
+function redimensionarImagemHeader() {
+    const header = document.querySelector('header')
+
+    if (width < 600) {
+        if (currentPage === 'index.html' || currentPage === '') {
+            header.style.backgroundImage = 'url("./src/pictures/header-img-small.jpg")'
+        } else {
+            header.style.backgroundImage = 'url("./pictures/header-img-small.jpg")'
+        }
+    } else if (width >= 600 && width < 1440) {
+        if (currentPage === 'index.html' || currentPage === '') {
+            header.style.backgroundImage = 'url("./src/pictures/header-img-medium.jpg")'
+        } else {
+            header.style.backgroundImage = 'url("./pictures/header-img-medium.jpg")'
+        }
+    } else if (width >= 1440 && width < 2880) {
+        if (currentPage === 'index.html' || currentPage === '') {
+            header.style.backgroundImage = 'url("./src/pictures/header-img-large.jpg")'
+        } else {
+            header.style.backgroundImage = 'url("./pictures/header-img-large.jpg")'
+        }
+    } else {
+        header.style.backgroundImage = 'url("./src/pictures/header-img-original.jpg")'
+    }
+}
+
+function redimensionarImagensBody() {
+    const imagemCard = document.getElementById('img-card')
+    const imagemCta = document.getElementById('img-cta')
+
+    if (width < 600) {
+        imagemCard.src = './src/pictures/card-img-small.jpg'
+        imagemCta.src = './src/pictures/cta-img-small.jpg'
+    } else if (width >= 600 && width <1440 ) {
+        imagemCard.src = './src/pictures/card-img-medium.jpg'
+        imagemCta.src = './src/pictures/cta-img-medium.jpg'
+    } else if (width >= 1440 && width < 2880) {
+        imagemCard.src = './src/pictures/card-img-large.jpg'
+        imagemCta.src = './src/pictures/cta-img-large.jpg'
+    } else {
+        imagemCard.src = './src/pictures/card-img-original.jpg'
+        imagemCta.src = './src/pictures/cta-img-original.jpg'
+    }
+}
+
+window.addEventListener('load', () => {
+    redimensionarImagemHeader()
+    redimensionarImagensBody()
+})
+
 window.addEventListener('resize', () => {
     // Remove setas anteriores (evitar duplicação)
     document.querySelectorAll('.processo__itens-arrow img').forEach(arrow => arrow.remove())
     processo()
     headerSize()
+    redimensionarImagemHeader()
+    redimensionarImagensBody()
 });
+

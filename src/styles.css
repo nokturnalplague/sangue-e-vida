@@ -134,7 +134,6 @@ strong {
 }
 
 header {
-    background-image: url('./pictures/header-img.jpg');
     background-size: cover;
     background-position: center;
     width: 100vw;
