@@ -5,7 +5,7 @@ Sangue & Vida é um site desenvolvido para conscientizar a população sobre a i
 O projeto foi cuidadosamente planejado utilizando um protótipo de alta fidelidade no Figma, garantindo uma experiência de usuário (UX) agradável, intuitiva e acessível.
 
 ## 🌐 Acesse o projeto
-Site Online: sangue-e-vida.netlify.app
+https://nokturnalplague.github.io/sangue-e-vida
 
 ## 💻 Tecnologias utilizadas
 
